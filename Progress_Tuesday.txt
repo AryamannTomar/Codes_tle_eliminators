@@ -1,0 +1,48 @@
+Folder PATH listing for volume Windows 
+Volume serial number is AEED-3E7F
+C:.
+¦   custom_template.txt
+¦   Progress_Tuesday.txt
+¦   template.cpp
+¦   
++---Week_1
+¦   +---Intro1
+¦   ¦       dp1.cpp
+¦   ¦       dp2.cpp
+¦   ¦       dp3.cpp
+¦   ¦       
+¦   +---z_ProblemSet
+¦           Coins.cpp
+¦           OracModels.cpp
+¦           Tetrahedron.cpp
+¦           
++---Week_2
+¦   +---1_SpaTxOpt
+¦   ¦       dp4.cpp
+¦   ¦       
+¦   +---2_StElimCycSt
+¦   ¦       35.cpp
+¦   ¦       Exp.cpp
+¦   ¦       
+¦   +---3_AnsConNonInt
+¦           dp5.cpp
+¦           
++---Week_4
+¦   +---Intro1
+¦   ¦       DFS.cpp
+¦   ¦       
+¦   +---Intro2
+¦           BFS.cpp
+¦           Dia1.cpp
+¦           Dia2.cpp
+¦           XAncestorY.cpp
+¦           
++---Week_5
+    +---1_BLift_LCA
+    ¦       BLift.cpp
+    ¦       LCA.cpp
+    ¦       mxElePath.cpp
+    ¦       
+    +---1_PS_BLift_LCA
+    +---2_DpTrees
+    +---2_PS_DpTrees
