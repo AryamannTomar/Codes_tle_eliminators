@@ -13,6 +13,13 @@ void CalcAncestors(){
     }
 }
 
+int lift(int u, int k){
+    for(int j=0;j<LOG;j++) 
+        if((k>>j)&1)
+            u=anc[u][j]
+    return u;
+}
+
 int main(){
     return 0;
 }
