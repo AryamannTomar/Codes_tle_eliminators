@@ -7,7 +7,6 @@ int main(){
     vector<int> depth(n+1);
     vector<long long> sum_from_root(n+1,0);
     vector<vector<int>> mx(n+1,vector<int>(LOG));
-
     
     auto dfs=[&](auto&& dfs, int u, int p)->void{
         par[u][0]=p;
@@ -59,31 +58,25 @@ int main(){
         }
         return par[u][0];
     };
-
     /*
     ========================================================================================
     Q1 distance u,v
     Q2 Sum of nodes u,v inclusive
     Q3 Max Node in path from u to v
     */
-
     auto dist=[&](int u, int v){
         return depth[u]+depth[v]-2*depth[lca(u,v)];
     };
-
     auto sum_path=[&](int u, int v){
         return sum_from_root[u]+sum_from_root[v]-2*sum_from_root[lca(u,v)]+a[lca(u,v)];
     };
-
     auto max_path=[&](int u, int v){
         int l=lca(u,v);
         return max(get_max(u,depth[u]-depth[l]), get_max(v,depth[v]-depth[l]),a[l]);
     };
-
     /*
     ============================================================================================
 	*/
-
     int n;cin>>n;
     vector<int> a(n+1);
     for(int i=0;i<=n-1;i++) cin>>a[i];
