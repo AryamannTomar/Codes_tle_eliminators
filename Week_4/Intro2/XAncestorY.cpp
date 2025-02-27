@@ -7,7 +7,6 @@ vector<int> inTime(1e6), outTime(1e6);
 void dfs(int curr, vector<vector<int>>& adj, int parent){
     globalTime++;
     inTime[curr]=globalTime;
-    inTime[curr]=globalTime;
     for(int neigh: adj[curr])
         if(neigh!=parent) dfs(neigh,adj,curr);
     globalTime++;
