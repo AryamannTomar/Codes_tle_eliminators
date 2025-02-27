@@ -32,8 +32,7 @@ int main(){
 
     for(int j=0;j<LOG;j++){
         for(int u=1;u<=n;u++){
-            int mid=par[u][j-1];
-            par[u][j]=par[mid][j-1];
+            par[u][j]=par[par[u][j-1]][j-1];
             mx[u][j]=max(mx[u][j-1],mx[mid][j-1]);
         }
     }
