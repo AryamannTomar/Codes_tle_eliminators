@@ -53,7 +53,7 @@ int main(){
                 u=par[u][j];
             }
         }
-        return u;
+        return ans;
     };
 
     auto lca=[&](int u, int v){
